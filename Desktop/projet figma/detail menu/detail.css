@@ -1,0 +1,228 @@
+/* css body */
+
+body {
+    width: 1093px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* css header  */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* divisé les bloc */
+}
+
+.logo img {
+    width: 206px;
+    height: 102px;
+    margin: 26px 90px 26px 90px;
+}
+
+.barre_menu {
+    display: flex;
+    justify-content: flex-end;
+    /* en haut à droite */
+    margin: 63px 0px 63px 0px;
+}
+
+.nav_ul {
+    display: inline-flex;
+    /* meme ligne */
+    list-style: none;
+}
+
+.nav_ul li {
+    width: 100px;
+}
+
+.nav_ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* css content */
+
+
+/* css food app */
+
+#home {
+    color: orangered;
+}
+
+.photo_accueil {
+    width: 100%;
+    height: 404px;
+}
+
+#food_app {
+    position: relative;
+}
+
+.titrefood {
+    position: absolute;
+    top: 41px;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.suite_content {
+    margin: 20px 20px 20px 20px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titre {
+    font-size: 27px;
+}
+
+.groupe {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 250px;
+    height: 25px;
+    margin: 10px 0 0 0;
+    border-width: 1px;
+    /* code couleur gray */
+}
+
+::placeholder {
+    color: gray;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 80%;
+}
+
+.select {
+    width: 250px;
+    height: 30px;
+    margin: 10px 0 0 0;
+    color: gray;
+}
+
+.input-radio {
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100px;
+    background-color: orangered;
+    border-radius: 50px;
+    color: white;
+    float: right;
+    border-color: orangered;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.label_list {
+    margin: 25px 25px 25px 25px;
+}
+
+.haumburger {
+    margin: 0;
+    font-size: 26px;
+    line-height: 55px;
+    display: none;
+    width: 26px;
+}
+
+#toggle {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    body {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 991px) {
+    .barre_menu ul {
+        display: none;
+    }
+    .haumburger {
+        display: block;
+        cursor: pointer;
+        float: right;
+    }
+    #toggle:checked~ul {
+        display: block;
+        float: right;
+    }
+    .barre_menu {
+        display: flow-root;
+        flex-direction: row;
+        margin: 30px;
+    }
+    li {
+        padding: 20px;
+    }
+    .btn {
+        margin-right: 50px;
+        margin-bottom: 140px;
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo img {
+        width: 133px;
+        height: 75px;
+        margin: 26px 20px 26px 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    .photo_accueil {
+        height: 235px;
+    }
+    .list {
+        grid-template-columns: 1fr;
+    }
+    .input {
+        width: 100%;
+    }
+    .select {
+        width: 100%;
+        margin: 0;
+    }
+    .list_boisson {
+        display: inline-flex;
+        width: 100%;
+    }
+    .label_list {
+        width: 100%;
+        margin: 0 20px;
+    }
+    .titre {
+        font-size: 23px;
+    }
+    .btn {
+        margin-right: 50px;
+        margin-bottom: 35px;
+        margin-top: 20px;
+    }
+}

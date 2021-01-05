@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="formulaire.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>
+        formulaire
+    </title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+
+            <div class="menu">
+
+                <div class="logo">
+                    <img src="../images/logo.png">
+                </div>
+                <div class="barre_menu">
+                    <label class="haumburger" for="toggle">&#9776;</label>
+
+                    <input type="checkbox" id="toggle" />
+                    <ul>
+                        <li><a id="home" href="../menu grid/menu.html#food_app">Home</a></li>
+                        <li><a href="../menu grid/menu.html#nos_pizza">Pizza</a></li>
+                        <li><a href="../menu grid/menu.html#nos_burger">Burgers</a></li>
+                        <li><a href="../menu grid/menu.html#nos_salades">Salade</a></li>
+                        <li><a href="../menu grid/menu.html#footer">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="food_app">
+            <img class="photo_accueil" src="..\images\foodapp.png">
+            <div class="titrefood">
+                <h4>food app</h4>
+                <h2>chez bella</h2>
+                <h2>chaque désir s'additionne</h2>
+            </div>
+        </div>
+        <form>
+            <section id="information">
+                <h1>Vos informations</h1>
+                <div class="grand_bloc">
+                    <div class="infobloc1">
+                        <label>Nom</label><br>
+                        <input class="input" type="text" name="Nom" placeholder="Nom"> <br>
+                        <label>Telephone</label><br>
+                        <input class="input" type="number" name="Telephone" placeholder="Telephone"> <br>
+                    </div>
+                    <div class="infobloc2">
+                        <label>Prenom</label><br>
+                        <input class="input" type="text" name="Prenom" placeholder="Prenom"> <br>
+                        <label>E-mail</label> <br>
+                        <input class="input" type="text" name="E-mail" placeholder="E-mail"> <br>
+
+                    </div>
+                </div>
+
+            </section>
+            <hr>
+            <section id="votre_commande">
+                <div class="votre_commande">
+                    <h1>Votre commande</h1>
+                    <h5 class="p4">pizza 4 fromage</h5>
+                </div>
+                <h2>Supplements</h2>
+                <div class="ing_qua">
+                    <div class="ingredient">
+
+                        <label for="ingredient">ingredient:</label> <br>
+                        <select class="select" name="ingredient" id="ingredient">
+                            <option value="">--choisir un ingredient--</option>
+                            <option value="fromage">fromage</option>
+                            <option value="chorizo">chorizo</option>
+                            <option value="piment">piment</option>
+                            <option value="thon">thon</option>
+                            <option value="tomate">tomate</option>
+                            <option value="mozzarella">mozzarella</option>
+                        </select>
+
+
+                        <br>
+                        <label for="ingredient">ingredient:</label> <br>
+                        <select class="select" name="ingredient" id="ingredient">
+                            <option value="">--choisir un ingredient--</option>
+                            <option value="fromage">fromage</option>
+                            <option value="chorizo">chorizo</option>
+                            <option value="piment">piment</option>
+                            <option value="thon">thon</option>
+                            <option value="tomate">tomate</option>
+                            <option value="mozzarella">mozzarella</option>
+                        </select>
+                        <br>
+                        <label for="ingredient">ingredient:</label> <br>
+
+                        <select class="select" name="ingredient" id="ingredient">
+                            <option value="">--choisir un ingredient--</option>
+                            <option value="fromage">fromage</option>
+                            <option value="chorizo">chorizo</option>
+                            <option value="piment">piment</option>
+                            <option value="thon">thon</option>
+                            <option value="tomate">tomate</option>
+                            <option value="mozzarella">mozzarella</option>
+                        </select>
+                        <br>
+                        <label for="ingredient">ingredient:</label> <br>
+                        <select class="select" name="ingredient" id="ingredient">
+                            <option value="">--choisir un ingredient--</option>
+                            <option value="fromage">fromage</option>
+                            <option value="chorizo">chorizo</option>
+                            <option value="piment">piment</option>
+                            <option value="thon">thon</option>
+                            <option value="tomate">tomate</option>
+                            <option value="mozzarella">mozzarella</option>
+                        </select>
+
+                    </div>
+                    <div class="quantite">
+                        <label>quantite</label><br>
+                        <input class="input" type="number" name="quantite" value="1"> <br>
+                        <label>quantite</label><br>
+                        <input class="input" type="number" name="quantite" value="1"> <br>
+                        <label>quantite</label><br>
+                        <input class="input" type="number" name="quantite" value="1"> <br>
+                        <label>quantite</label><br>
+                        <input class="input" type="number" name="quantite" value="1"> <br>
+
+                    </div>
+                </div>
+                <div class="as_frites">
+                    <input class="fritta" type="radio" id="avec_frites" name="drone" value="avec_frites" checked>
+                    <label for="avec frites">avec frites</label> <br>
+                    <input class="fritta" type="radio" id="sans_frites" name="drone" value="sans_frites">
+                    <label for="sans_frites">sans frites</label>
+                </div>
+                <div id="desboi">
+                    <div class="boissons">
+                        <h2>Boissons</h2>
+                        <div>
+                            <input class="chakchouka" type="checkbox" id="cocacola" name="cocacola" checked>
+                            <label class="bd" for="cocacola">coca cola</label>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+
+                            </select>
+                        </div>
+                        <div>
+                            <input class="chakchouka" type="checkbox" id="fanta" name="fanta">
+                            <label class="bd" for="fanta">fanta</label>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+
+                            </select>
+                        </div>
+                        <div>
+                            <input class="chakchouka" type="checkbox" id="eau" name="eau">
+                            <label class="bd" for="eau">eau</label>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="dessert">
+                        <h2>Dessert</h2>
+                        <div>
+                            <input class="chakchouka" type="checkbox" id="tiramisu" name="tiramisu" checked>
+                            <label class="bd" for="tiramisu">tiramisu</label>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+
+                            </select>
+                        </div>
+                        <div>
+                            <input class="chakchouka" type="checkbox" id="cheese_cake" name="cheese_cake">
+                            <label class="bd" for="cheese_cake">cheese cake</label>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+
+                            </select>
+                        </div>
+                        <div>
+                            <input class="chakchouka" type="checkbox" id="tarte_au_fraise" name="tarte_au_fraise">
+                            <label class="bd" for="tarte_au_fraise">tarte au fraise</label>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </section>
+            <section id="adresse">
+                <h1>Adresse de livraison</h1>
+                <div class="grand_bloc">
+                    <div class="infobloc1">
+                        <label>Nom</label><br>
+                        <input class="input" type="text" name="Nom" placeholder="Nom"> <br>
+                        <label>Telephone</label><br>
+                        <input class="input" type="number" name="Telephone" placeholder="Telephone"> <br>
+                    </div>
+                    <div class="infobloc2">
+                        <label>Prenom</label><br>
+                        <input class="input" type="text" name="Prenom" placeholder="Prenom"> <br>
+                        <label>E-mail</label> <br>
+                        <input class="input" type="text" name="E-mail" placeholder="E-mail"> <br>
+
+                    </div>
+
+                </div>
+                <div class="grand_bloc">
+                    <div class="infobloc1">
+                        <label>adresse</label><br>
+                        <input class="input" type="text" name="adresse" placeholder="adresse"> <br>
+                        <label>ville</label><br>
+                        <input class="input" type="text" name="ville" placeholder="ville"> <br>
+                    </div>
+                    <div class="infobloc2">
+                        <label>code postale</label><br>
+                        <input class="input" type="text" name="code postale" placeholder="code postale"> <br>
+                        <label>pays</label> <br>
+                        <input class="input" type="text" name="pays" placeholder="pays"> <br>
+
+                    </div>
+
+                </div>
+            </section>
+            <button class="Envoyer" type="button">
+                Envoyer
+            </button>
+        </form>
+    </div>
+
+</body>
+
+</html>

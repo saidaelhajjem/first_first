@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>
+        contact
+    </title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+
+            <div class="menu">
+
+                <div class="logo">
+                    <img src="../images/logo.png">
+                </div>
+                <div class="barre_menu">
+
+                    <label class="haumburger" for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle" />
+                    <ul>
+
+                        <li><a id="home" href="../menu grid/menu.html#food_app">Home</a></li>
+                        <li><a href="../menu grid/menu.html#nos_pizza">Pizza</a></li>
+                        <li><a href="../menu grid/menu.html#nos_burger">Burgers</a></li>
+                        <li><a href="../menu grid/menu.html#nos_salades">Salade</a></li>
+                        <li><a href="../menu grid/menu.html#footer">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="food_app">
+            <img class="photo_accueil" src="..\images\foodapp.png">
+            <div class="titrefood">
+                <h4>food app</h4>
+                <h2>chez bella</h2>
+                <h2>chaque désir s'additionne</h2>
+            </div>
+        </div>
+        <form>
+            <section id="information">
+                <h1>Nous contacter</h1>
+                <div class="grand_bloc">
+                    <div class="infobloc1">
+                        <label>Nom</label><br>
+                        <input type="text" name="Nom" placeholder="Nom"> <br>
+                        <label>Telephone</label><br>
+                        <input type="number" name="Telephone" placeholder="Telephone"> <br>
+                        <label>societe</label><br>
+                        <input type="text" name="societe" placeholder="societe"> <br>
+                    </div>
+                    <div class="infobloc2">
+                        <label>Prenom</label><br>
+                        <input type="text" name="Prenom" placeholder="Prenom"> <br>
+                        <label>E-mail</label> <br>
+                        <input type="text" name="E-mail" placeholder="E-mail"> <br>
+                        <label>fonction</label><br>
+                        <input type="text" name="fonction" placeholder="fonction"> <br>
+
+                    </div>
+                </div>
+            </section>
+            <div class="button1">
+                <button class="upload" type="button">
+                UPLOAD
+            </button>
+                <input class="file" type="file">
+                <div class="choose">
+                    <p>choose your file</p>
+                </div>
+            </div>
+
+            <div class="re-captcha">
+                <p>ICI METTRE re-captcha</p>
+            </div>
+            <div class="obmes">
+                <div class="objet">
+                    <label for="objet">objet:</label> <br>
+                    <br>
+                    <select name="objet" id="objet">
+                    <option value="">--objet--</option>
+                    <option value="reclamation">reclamation</option>
+                    <option value="franchise">franchise</option>
+                    <option value="renseignement">renseignement</option>
+                </select>
+
+                </div>
+
+                <div class="message">
+                    <label for="message">message:</label> <br>
+                    <textarea placeholder="message">
+
+                </textarea>
+
+
+                </div>
+
+                <img class="mappe" src="../images/mappe.png">
+
+            </div>
+
+            <button class="Envoyer" type="button">
+            Envoyer
+        </button>
+    </div>
+    </form>
+</body>
+
+</html>

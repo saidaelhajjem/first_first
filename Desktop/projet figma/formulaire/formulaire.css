@@ -1,0 +1,254 @@
+body {
+    width: 1093px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+section {
+    margin: 30px
+}
+
+.menu {
+    display: flex;
+}
+
+.logo img {
+    width: 206px;
+    height: 102px;
+    margin: 26px 90px 26px 90px;
+}
+
+.barre_menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-family: montserrat;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.barre_menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.photo_accueil {
+    width: 100%;
+}
+
+.food_app {
+    position: relative;
+}
+
+.titrefood {
+    position: absolute;
+    width: 100%;
+    top: 38px;
+    text-align: center;
+    color: white;
+    font-family: poppins;
+    font-size: 32px;
+}
+
+.barre_menu ul {
+    list-style: none;
+    font-size: 16px;
+    font-style: normal;
+    display: flex;
+    justify-content: space-around;
+    margin-block: auto;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+#home {
+    color: orangered;
+}
+
+.grand_bloc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infobloc1 {
+    display: block;
+}
+
+.infobloc2 {
+    display: block;
+    margin-right: 200px;
+}
+
+.votre_commande {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px 12px 8px 12px;
+    width: 220px;
+}
+
+::placeholder {
+    color: #BFBFBF;
+}
+
+hr {
+    width: 600px;
+}
+
+.p4 {
+    color: #FA4A0C;
+    font-size: 15px;
+    margin-right: 245px;
+}
+
+.ing_qua {
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    margin: 10px 0px 20px 0px;
+    padding: 8px 12px 8px 12px;
+    width: 220px;
+}
+
+.quantite {
+    margin-right: 400px;
+}
+
+.fritta {
+    width: 20px;
+}
+
+#desboi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chakchouka {
+    width: 20px;
+}
+
+.bd {
+    width: 102px;
+    display: inline-block;
+}
+
+button {
+    background-color: orangered;
+    color: white;
+    border-radius: 20px;
+    width: 177px;
+    height: 52px;
+    font-size: 23px;
+    float: right;
+    font-weight: 700;
+    margin-bottom: 140px;
+    margin-top: 110px;
+}
+
+.haumburger {
+    margin: 0;
+    font-size: 26px;
+    line-height: 55px;
+    display: none;
+    width: 26px;
+}
+
+#toggle {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    body {
+        width: fit-content;
+    }
+    button {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .barre_menu ul {
+        display: none;
+    }
+    .haumburger {
+        display: block;
+        cursor: pointer;
+        float: right;
+    }
+    #toggle:checked~ul {
+        display: block;
+        float: right;
+    }
+    .barre_menu {
+        display: flow-root;
+        flex-direction: row;
+        margin: 30px;
+    }
+    li {
+        padding: 20px;
+    }
+    form {
+        margin: 0 20px 0 20px;
+    }
+    .bd {
+        width: 147px;
+    }
+    #desboi {
+        display: block;
+    }
+    .quantite {
+        margin-right: 0px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    .infobloc2 {
+        margin-right: 0px;
+    }
+    .logo img {
+        width: 133px;
+        height: 75px;
+        margin: 26px 20px 26px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .grand_bloc {
+        display: block;
+    }
+    .ing_qua {
+        display: block;
+    }
+    .input {
+        width: 100%;
+        height: 30px;
+        font-size: 20px;
+    }
+    .select {
+        width: 104%
+    }
+    label {
+        font-size: 20px;
+    }
+}
